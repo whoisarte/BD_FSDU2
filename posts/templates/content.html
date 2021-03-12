@@ -55,10 +55,10 @@
             </div>
         </section>
         <h2 class="subtitulo">Contactos externos</h2>
-        <ul class="service">
-            {% for post in nombre_correos %}
-                        <li> {{ post.nombre }} </li>
-                        <li> {{ post.correo }} </li>
+        <ul class="subtitulo">
+            {% for post in superlista %}
+                        <li class="service"> {{ post.nombre }} </li>
+                        <li class="service"> {{ post.correo }} </li>
             {% endfor %}
         </ul>
     </main>

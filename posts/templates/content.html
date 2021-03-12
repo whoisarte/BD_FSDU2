@@ -11,6 +11,7 @@
 </head>
 {% extends 'base.html' %}
 {% block content %}
+{% load static %}
 <body>
     <header class="header" id="inicio">
         <div class="contenedor head">
@@ -53,10 +54,13 @@
                 </div>
             </div>
         </section>
-        <section class="imagen-light">
-            <img src="{% static 'images/bx-x.svg' %}" alt="" class="close">
-            <img src="" alt="" class="agregar-imagen">
-        </section>
+        <h2 class="subtitulo">Contactos externos</h2>
+        <ul class="service">
+            {% for post in nombre_correos %}
+                        <li> {{ post.nombre }} </li>
+                        <li> {{ post.correo }} </li>
+            {% endfor %}
+        </ul>
     </main>
     <footer id="contacto">
         <div class="contenedor footer-content">

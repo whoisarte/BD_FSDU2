@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+{% extends 'base.html' %}
+{% block content %}
+{% load staticfiles %}
+<body>
+    <header class="header" id="inicio">
+        <div class="contenedor head">
+            <h1 class="titulo">Fotografíamos lo que mas amas</h1>
+        </div>
+    </header>
+    <main>
+        <section clas s="services contenedor"id="servicio">
+            <h2 class="subtitulo">Nuestro Servicio</h2>
+            <div class="contenedor-servicio">
+                <img src="{% static 'images/Team building _Monochromatic.png' %}" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <p>Servicio de fotografía profesional para todo tipo de necesidades, deseos y gustos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="imagen-light">
+            <img src="{% static 'images/bx-x.svg' %}" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </section>
+    </main>
+    <footer id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">Artemio Pánuco González</h2>
+                <p>Full Stack Development II</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/whosarte" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://www.instagram.com/whthfcksrt" class="social-media-icon">
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+
+    <script src="templates/js/menu.js"></script>
+    <script src="templates/js/lightbox.js"></script>
+</body>
+{% endblock content %}
+</html>

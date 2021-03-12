@@ -1,0 +1,9 @@
+<header>
+    {% load static %}
+    <a href = "{% url 'index' %}"> Inicio </a>> ‡ <a href = "{% url 'content' %}"> Contenido </a>> ‡ <a href = "{% url 'about' %}"> Acerca de... </a>>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'posts/static/css/base.css' %}">
+</header>
+
+{% block content %}
+{% endblock content %}
